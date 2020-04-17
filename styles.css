@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /*O padding não aumenta o tamanho de uma elemento*/
+}
+
+body {
+  background: #E6ECF0;
+  font-family: 'Helvetica Neuw', 'Helvetica', Arial, sans-serif;
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smooting: antialiased !important;
+}
+
+input, button{
+  outline: 0;
+}
+
+.content{
+  max-width: 1070px;
+  margin: 0 auto;
+  height: 100%;
+  padding: 0 30px;
+}
+
+header#main-header .content{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header#main-header{
+  height: 46px;
+  background: #fff;
+  box-shadow: 0 1px 1px rgba(0,0,0,.25);
+  position: relative;
+  z-index: 1;
+}
+
+header#main-header nav ul{
+  display: flex;
+  list-style: none;
+}
+
+header#main-header nav ul li{
+  font-size: 13px;
+  color: #667580;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+
+  margin-left: 30px;
+}
+
+header#main-header nav ul li:first-child{
+  margin: 0;
+}
+
+header#main-header nav ul li img{
+  margin-right: 7px;
+}
+
+header#main-header .side img{
+  height: 34px;
+  width: 34px;
+  border-radius: 50%;
+  margin: 0 15px;
+}
+
+header#main-header .side {
+  display: flex;
+}
+
+header#main-header .side button{
+  background: #3BB9E3;
+  width: 90px;
+  height: 34px;
+  border: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+  border-radius: 16px;
+}
+header#main-header .side input{
+  border: 1px solid #E6ECF0;
+  height: 34px;
+  width: 220px;
+  padding:  0 30px 0 12px;
+  border-radius: 16px;
+
+  color: #667581;
+  font-size: 12px;
+
+  background: #F5F8FA url('/images/search.svg') no-repeat 190px center;
+}
+
+.banner {
+  height: 380px;
+  width: 100%;
+  background: #3BB9E3;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #fff;
+}
+
+.bar{
+  height: 59px;
+  background: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+}
+
+.bar .content{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 285px;
+}
+
+.bar .content ul {
+  list-style: none;
+  display: flex;
+}
+
+.bar .content ul li{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 15px;
+}
+
+.bar .content ul li span{
+  color: #667580;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.bar .content ul li strong{
+  font-size: 18px;
+  color: #667580;
+  font-weight: bold;
+  margin-top: 2px;
+}
